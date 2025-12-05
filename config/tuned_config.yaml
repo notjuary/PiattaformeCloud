@@ -1,0 +1,33 @@
+# Configurazione ottimizzata
+log_path: "keystone_example.log"
+model_path: "models/optimized_model.pkl"
+
+# AI Engine - parametri ottimizzati
+ai_engine:
+  contamination: 0.05  # 5% anomalie attese
+  n_estimators: 100
+  random_state: 42
+
+# Policy Advisor - soglie regolate
+policy:
+  risk_threshold: 0.7
+  mfa_threshold: 0.5
+  block_threshold: 0.8
+  max_failed_attempts: 3
+  cooldown_minutes: 30
+
+# Whitelist
+whitelist:
+  ips:
+    - "127.0.0.1"
+    - "10.0.0.0/8"
+    - "192.168.0.0/16"
+
+  users:
+    - "nova"
+    - "cinder"
+    - "neutron"
+
+# Debug
+debug: true
+log_level: "INFO"
