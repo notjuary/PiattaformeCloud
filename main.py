@@ -2,7 +2,7 @@
 """
 AI Security Advisor - Main entry point
 """
-
+import logging
 import sys
 import os
 
