@@ -2,9 +2,14 @@
 """
 AI Security Advisor - Main entry point
 """
+import argparse
+import datetime
 import logging
 import sys
 import os
+from pathlib import Path
+
+import yaml
 
 # Aggiungi la directory del progetto al path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
